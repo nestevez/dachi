@@ -14,23 +14,10 @@ namespace dojodachi.Controllers
         [Route("/")]
         public IActionResult Index()
         {
-            
-            return View();
-        }
-
-        [HttpPost]
-        [Route("/initiate/")]
-        public IActionResult About()
-        {
-            HttpContext.Session.Clear();
-            Dachi dachi = new Dachi();
-            HttpContext.Session.SetObjectAsJson("dachi", dachi);          
-            return RedirectToAction("Game");
-        }
-
-        public IActionResult Game()
-        {
             Dachi dachi = HttpContext.Session.GetObjectFromJson<Dachi>("dachi");
+            if(dachi == null){
+                dachi = new Dachi();
+            }
             ViewBag.happiness = dachi.happiness;
             ViewBag.fullness = dachi.fullness;
             ViewBag.energy = dachi.energy;
@@ -51,8 +38,8 @@ namespace dojodachi.Controllers
             {
                 ViewBag.message = "Choose an action";
             }
-
-            return View();
+            HttpContext.Session.SetObjectAsJson("dachi", dachi); 
+            return View("Game");
         }
 
         [HttpPost]
@@ -75,6 +62,11 @@ namespace dojodachi.Controllers
             {
                 TempData["message"] = dachi.sleeping();
             }
+            if(act=="Restart?")
+            {
+                HttpContext.Session.Clear();
+                dachi = new Dachi(); 
+            }
             string done = dachi.isDone();
             if(done == "win")
             {
@@ -91,7 +83,7 @@ namespace dojodachi.Controllers
                 TempData["done"] = "false";
             }
             HttpContext.Session.SetObjectAsJson("dachi", dachi); 
-            return RedirectToAction("Game");
+            return RedirectToAction("Index");
         }
     }
 }

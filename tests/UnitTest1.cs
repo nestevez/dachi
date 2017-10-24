@@ -10,7 +10,8 @@ namespace dojodachi
         public void opening_page_initializes_dachi()
         {
             object tester = new Dachi(); 
-            Assert.IsType(Dachi, tester);
+            Assert.IsType<Dachi>(tester);
+            
             Assert.True(tester.happiness == 20);
             Assert.True(tester.fullness == 20);
             Assert.True(tester.energy == 50);
