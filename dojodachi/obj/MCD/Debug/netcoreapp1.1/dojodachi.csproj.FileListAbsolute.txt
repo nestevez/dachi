@@ -1,0 +1,8 @@
+C:\Users\Natalia\Documents\Coding\DojoAssignments\netCore\learnPortal\dachi\dojodachi\bin\MCD\Debug\netcoreapp1.1\dojodachi.deps.json
+C:\Users\Natalia\Documents\Coding\DojoAssignments\netCore\learnPortal\dachi\dojodachi\bin\MCD\Debug\netcoreapp1.1\dojodachi.runtimeconfig.json
+C:\Users\Natalia\Documents\Coding\DojoAssignments\netCore\learnPortal\dachi\dojodachi\bin\MCD\Debug\netcoreapp1.1\dojodachi.runtimeconfig.dev.json
+C:\Users\Natalia\Documents\Coding\DojoAssignments\netCore\learnPortal\dachi\dojodachi\bin\MCD\Debug\netcoreapp1.1\dojodachi.dll
+C:\Users\Natalia\Documents\Coding\DojoAssignments\netCore\learnPortal\dachi\dojodachi\bin\MCD\Debug\netcoreapp1.1\dojodachi.pdb
+C:\Users\Natalia\Documents\Coding\DojoAssignments\netCore\learnPortal\dachi\dojodachi\obj\MCD\Debug\netcoreapp1.1\dojodachi.AssemblyInfo.cs
+C:\Users\Natalia\Documents\Coding\DojoAssignments\netCore\learnPortal\dachi\dojodachi\obj\MCD\Debug\netcoreapp1.1\dojodachi.dll
+C:\Users\Natalia\Documents\Coding\DojoAssignments\netCore\learnPortal\dachi\dojodachi\obj\MCD\Debug\netcoreapp1.1\dojodachi.pdb

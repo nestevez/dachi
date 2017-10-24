@@ -1,0 +1,4 @@
+C:\Users\Natalia\Documents\Coding\DojoAssignments\netCore\learnPortal\dachi\tests\bin\MCD\Debug\netcoreapp1.1\dachi.deps.json
+C:\Users\Natalia\Documents\Coding\DojoAssignments\netCore\learnPortal\dachi\tests\bin\MCD\Debug\netcoreapp1.1\dachi.runtimeconfig.json
+C:\Users\Natalia\Documents\Coding\DojoAssignments\netCore\learnPortal\dachi\tests\bin\MCD\Debug\netcoreapp1.1\dachi.runtimeconfig.dev.json
+C:\Users\Natalia\Documents\Coding\DojoAssignments\netCore\learnPortal\dachi\tests\obj\MCD\Debug\netcoreapp1.1\dachi.AssemblyInfo.cs

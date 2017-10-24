@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DojoDachiii!</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Fullness: @ViewBag.fullness</li>
+            <li>Happiness: @ViewBag.happiness</li>
+            <li>Energy: @ViewBag.energy</li>
+            <li>Meals: @ViewBag.meals</li>
+        </ul>
+    </nav>
+    <div>
+        <img src="~/images/dojodachi.gif"/>
+        <p>@TempData["message"]</p>
+    </div>
+    @{
+        if(@ViewBag.done != "true"){
+            <form action="/act/" method="post">
+                <input type="submit" value="Feed" name="act">
+                <input type="submit" value="Play" name="act">
+                <input type="submit" value="Work" name="act">
+                <input type="submit" value="Sleep" name="act">
+            </form>
+
+        }
+        else
+        {
+            <form action="/initiate/" method="post">
+                <input type="submit" value="Restart?">
+            </form>
+        }
+    }
+</body>
+</html>
